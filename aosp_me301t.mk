@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/asus/grouper/full_me301t.mk)
+$(call inherit-product, device/asus/me301t/full_me301t.mk)
 
 PRODUCT_NAME := aosp_me301t
+
+PRODUCT_PACKAGES += \
+    Launcher3
+

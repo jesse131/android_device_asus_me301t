@@ -440,17 +440,15 @@ def WriteFullOTAPackage(input_zip, output_zip):
     script.Print("Formatting /data")
     script.FormatPartition("/data")
 
-  script.Print("#######################################");
-  script.Print("# _____            __  __  ______     #");
-  script.Print("#/\  __`\  /'\_/`\/\ \/\ \/\__  _\    #");
-  script.Print("#\ \ \/\ \/\  ``  \ \ ` \ \/_/\ \/    #");
-  script.Print("# \ \ \ \ \ \ \__\ \ \ . ` \ \ \ \    #");
-  script.Print("#  \ \ \_\ \ \ \_/\ \ \ \`\ \ \_\ \__ #");
-  script.Print("#   \ \_____\ \_\, \_\ \_\ \_\/\_____\#");
-  script.Print("#    \/_____/\/_/ \/_/\/_/\/_/\/_____/#");
-  script.Print("#                                     #");
-  script.Print("#######################################");
-
+  script.Print("#######################################################");
+  script.Print("#______          ______    ______    _____   ______   #");
+  script.Print("#(_____ \  /\    / _____)  (_____ \  / ___ \ |  ___ \ #");
+  script.Print("# _____) )/  \  | /         _____) )| |   | || | _ | |#");
+  script.Print("#|  ____// /\ \ | |        (_____ ( | |   | || || || |#");
+  script.Print("#| |    | |__| || \_____         | || |___| || || || |#");
+  script.Print("#|_|    |______| \______)        |_| \_____/ |_||_||_|#");
+  script.Print("#######################################################");
+  
   if "selinux_fc" in OPTIONS.info_dict:
     WritePolicyConfig(OPTIONS.info_dict["selinux_fc"], output_zip)
 
@@ -488,7 +486,7 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.WriteRawImage("/staging", "boot.blob")
 
   script.ShowProgress(0.1, 0)
-  script.Print("Enjoy OMNI ROM!");
+  script.Print("Enjoy PAC ROM!");
   device_specific.FullOTA_InstallEnd()
 
   if OPTIONS.extra_script is not None:
