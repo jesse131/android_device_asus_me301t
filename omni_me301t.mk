@@ -19,8 +19,7 @@ TARGET_SCREEN_WIDTH := 800
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 # Inherit from those products. Most specific first.
 
 $(call inherit-product, device/asus/me301t/device_me301t.mk)
