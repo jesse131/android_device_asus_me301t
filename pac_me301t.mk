@@ -22,6 +22,7 @@ include vendor/pac/config/pac_common.mk
 
 # Inherit CM device configuration
 $(call inherit-product, device/asus/me301t/cm.mk)
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk )
 
 PRODUCT_NAME := pac_me301t
 
