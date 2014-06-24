@@ -167,5 +167,7 @@
     <!-- When config_perf_profile_prop = true, then this value MUST be one of the
          values listed in cm_arrays for perf_profile_values -->
 <!--    <string name="config_perf_profile_default_entry" translatable="false">1</string> -->
-
+     <!-- If this is true, the screen will fade off. -->
+     <bool name="config_animateScreenLights">false</bool>
+     
 </resources>
